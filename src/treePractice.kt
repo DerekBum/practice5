@@ -57,7 +57,7 @@ class calculateVisitor: Visitor<Int> {
 
 interface Node {
     fun <T> operate(visitor: Visitor<T>): T
-    fun getChildren() : List<Node>
+    fun getChildren(): List<Node>
 }
 
 class Sum(var left: Node, var right: Node): Node {
